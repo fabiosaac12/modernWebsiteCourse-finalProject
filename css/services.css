@@ -1,0 +1,24 @@
+/* INFO */
+#info .background {
+    /* background-image: url('../images/webOne-bg.jpg');
+    background-size: cover;
+    background-attachment: fixed; */
+    border-radius: 50px;
+    padding: 0!important;
+}
+
+#info .background > div {
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+#info .background > div > div {
+    transition: all 500ms;
+    display: inline-block;
+}
+#info .background > div:hover > div {
+    transform: scale(1.2);
+}
+/* INFO */

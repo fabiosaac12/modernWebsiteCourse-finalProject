@@ -1,0 +1,148 @@
+/* CAROUSEL */
+.carousel {
+    position: static;
+}
+.carousel img {
+    height: 100vh;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    top: 40%;
+    color: black;
+}
+
+.arrowDown {
+    margin-top: 20vh;
+}
+.arrowDown img {
+    width: 36px;
+    height: 36px;
+    animation: bounce 2500ms infinite;
+}
+
+@keyframes bounce {
+    0%, 25%, 50%, 75%, 100% {
+        transform: translateY(0)
+    }
+    37% {
+        transform: translateY(-30px)
+    }
+    62% {
+        transform: translateY(-15px)
+    }
+    87% {
+        transform: translateY(-5px)
+    }
+}
+/* CAROUSEL */
+
+
+/* BANNER SECTION */
+#banner i {
+    font-size: 60px;
+    margin-bottom: 20px
+}
+#banner p {
+    font-size: 20px;
+    font-weight: 600;
+}
+/* BANNER SECTION */
+
+
+/* INTRO SECTION */
+#intro img {
+    object-fit: contain;
+    margin: 25px 0px;
+}
+/* INTRO SECTION */
+
+
+/* QUOTE SECTION */
+#quote p:nth-child(1) {
+    margin-top: 10px;
+    font-size: 1.8rem;
+}
+#quote p:nth-child(2) {
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+#quote p:nth-child(3) {
+    font-style: italic;
+}
+/* QUOTE SECTION */
+
+
+/* WORK SECTION */
+.work-samples {
+    margin-top: 35px
+}
+.work-sample-wrapper {
+    padding: 10px;
+}
+.work-sample, .explore {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 220px;
+    text-align: center;
+    border-radius: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+.explore {
+    color: white;
+}
+.work-sample {
+    background-image: url('../images/work.jpg');
+}
+.explore {
+    background-image: url('../images/mac.jpg');
+}
+.work-samples h2, .work-samples p {
+    z-index: 1;
+    margin: 8px;
+}
+.explore::after, .work-sample::after {
+    content: '';
+    position: absolute;
+    top:0;
+    bottom:0;
+    right: 0;
+    left: 0;
+    border-radius: 10px;
+    background-color: black;
+    transition: all 500ms;
+    opacity: 0;
+    z-index: 0;
+}
+.work-sample:hover {
+    color: white;
+}
+.explore:hover::after, .work-sample:hover::after {
+    opacity: 0.8;
+}
+/* WORK SECTION */
+
+
+/* TESTIMONIALS SECTION */
+.person {
+    height: min-content;
+    transition: all 500ms
+}
+.person img {
+    width: 100%;
+    max-height: 50%;
+    object-fit: contain;
+    margin-bottom: -20px;
+}
+.person p {
+    font-style: italic;
+}
+.person p::after, .person p::before {
+    content: '"';
+}
+/* TESTIMONIALS SECTION */
